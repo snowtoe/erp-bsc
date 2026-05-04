@@ -1,0 +1,3 @@
+frappe
+load_planner
+erpnext

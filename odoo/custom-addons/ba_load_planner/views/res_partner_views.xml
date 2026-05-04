@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_ba_load_planner" model="ir.ui.view">
+        <field name="name">res.partner.form.ba.load.planner</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/notebook" position="inside">
+                <page string="Load Planning">
+                    <group>
+                        <group>
+                            <field name="ba_commission_group_id"/>
+                            <field name="ba_has_forklift"/>
+                        </group>
+                        <group>
+                            <field name="ba_preferred_main_load_unit_type_id"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

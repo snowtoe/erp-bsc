@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ba_load_unit_type_user,access.ba.load.unit.type.user,model_ba_load_unit_type,base.group_user,1,1,1,1
+access_ba_commission_group_user,access.ba.commission.group.user,model_ba_commission_group,base.group_user,1,1,1,1
+access_ba_commission_model_user,access.ba.commission.model.user,model_ba_commission_model,base.group_user,1,1,1,1
+access_ba_load_plan_user,access.ba.load.plan.user,model_ba_load_plan,base.group_user,1,1,1,1
+access_ba_load_unit_user,access.ba.load.unit.user,model_ba_load_unit,base.group_user,1,1,1,1
+access_ba_load_compartment_user,access.ba.load.compartment.user,model_ba_load_compartment,base.group_user,1,1,1,1
+access_ba_load_item_user,access.ba.load.item.user,model_ba_load_item,base.group_user,1,1,1,1

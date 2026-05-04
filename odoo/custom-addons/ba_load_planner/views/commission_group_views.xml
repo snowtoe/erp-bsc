@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_ba_commission_group_list" model="ir.ui.view">
+        <field name="name">ba.commission.group.list</field>
+        <field name="model">ba.commission.group</field>
+        <field name="arch" type="xml">
+            <list string="Kommissioniergruppen">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_ba_commission_group_form" model="ir.ui.view">
+        <field name="name">ba.commission.group.form</field>
+        <field name="model">ba.commission.group</field>
+        <field name="arch" type="xml">
+            <form string="Kommissioniergruppe">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                        <field name="active"/>
+                    </group>
+                    <group>
+                        <field name="note"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_ba_commission_group" model="ir.actions.act_window">
+        <field name="name">Kommissioniergruppen</field>
+        <field name="res_model">ba.commission.group</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

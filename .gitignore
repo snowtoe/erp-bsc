@@ -1,0 +1,76 @@
+# Secrets
+.env
+*.key
+*.pem
+*.crt
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Logs / Dumps / Backups
+*.log
+*.pid
+*.sqlite
+*.db
+*.dump
+*.bak
+*.backup
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Additional secrets / configs
+*.env
+*.p12
+*.pfx
+*.sql
+*.sqlite3
+*.tar
+*.tar.gz
+*.zip
+
+# Odoo
+odoo/*.conf
+odoo/filestore/
+odoo/sessions/
+odoo/.local/
+
+# ERPNext / Frappe
+erpnext/env/
+erpnext/logs/
+erpnext/sites/*/private/
+erpnext/sites/*/locks/
+erpnext/sites/*/logs/
+erpnext/sites/*/site_config.json
+erpnext/sites/common_site_config.json
+erpnext/sites/assets/
+
+# Frappe / ERPNext generated files
+erpnext/erp-bench/sites/assets/
+erpnext/erp-bench/sites/.build/
+erpnext/erp-bench/sites/*/public/files/
+erpnext/erp-bench/sites/*/private/files/
+erpnext/erp-bench/sites/*/private/backups/
+erpnext/erp-bench/logs/
+erpnext/erp-bench/sites/*/logs/
+erpnext/erp-bench/sites/common_site_config.json
+erpnext/erp-bench/sites/*/site_config.json
+erpnext/erp-bench/sites/*/private/
+erpnext/erp-bench/sites/*/public/files/
+erpnext/erp-bench/sites/assets/
+
+# Dolibarr
+dolibarr/documents/
+dolibarr/htdocs/conf/conf.php
+dolibarr/*.log

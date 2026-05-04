@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_ba_load_planner_root"
+              name="Load Planner"
+              sequence="10"/>
+
+    <menuitem id="menu_ba_load_planner_operations"
+              name="Operativ"
+              parent="menu_ba_load_planner_root"
+              sequence="10"/>
+
+    <menuitem id="menu_ba_load_plan"
+              name="Gebindepläne"
+              parent="menu_ba_load_planner_operations"
+              action="action_ba_load_plan"
+              sequence="10"/>
+
+    <menuitem id="menu_ba_load_planner_configuration"
+              name="Konfiguration"
+              parent="menu_ba_load_planner_root"
+              sequence="20"/>
+
+    <menuitem id="menu_ba_load_unit_type"
+              name="Gebindearten"
+              parent="menu_ba_load_planner_configuration"
+              action="action_ba_load_unit_type"
+              sequence="10"/>
+
+    <menuitem id="menu_ba_commission_group"
+              name="Kommissioniergruppen"
+              parent="menu_ba_load_planner_configuration"
+              action="action_ba_commission_group"
+              sequence="20"/>
+
+    <menuitem id="menu_ba_commission_model"
+              name="Kommissioniermodelle"
+              parent="menu_ba_load_planner_configuration"
+              action="action_ba_commission_model"
+              sequence="30"/>
+</odoo>

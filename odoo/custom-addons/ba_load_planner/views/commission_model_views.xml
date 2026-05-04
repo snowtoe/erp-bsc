@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_ba_commission_model_list" model="ir.ui.view">
+        <field name="name">ba.commission.model.list</field>
+        <field name="model">ba.commission.model</field>
+        <field name="arch" type="xml">
+            <list string="Kommissioniermodelle">
+                <field name="name"/>
+                <field name="commission_group_id"/>
+                <field name="partner_id"/>
+                <field name="primary_load_unit_type_id"/>
+                <field name="secondary_load_unit_type_id"/>
+                <field name="use_compartment_logic"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_ba_commission_model_form" model="ir.ui.view">
+        <field name="name">ba.commission.model.form</field>
+        <field name="model">ba.commission.model</field>
+        <field name="arch" type="xml">
+            <form string="Kommissioniermodell">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="commission_group_id"/>
+                            <field name="partner_id"/>
+                            <field name="active"/>
+                        </group>
+                        <group>
+                            <field name="primary_load_unit_type_id"/>
+                            <field name="secondary_load_unit_type_id"/>
+                            <field name="use_compartment_logic"/>
+                        </group>
+                    </group>
+
+                    <group string="Fachlogik">
+                        <field name="small_quantity_threshold"/>
+                        <field name="compartment_volume_limit"/>
+                        <field name="max_compartments"/>
+                        <field name="min_main_fill_ratio"/>
+                        <field name="loss_volume_per_level"/>
+                    </group>
+
+                    <group>
+                        <field name="note"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_ba_commission_model" model="ir.actions.act_window">
+        <field name="name">Kommissioniermodelle</field>
+        <field name="res_model">ba.commission.model</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>
